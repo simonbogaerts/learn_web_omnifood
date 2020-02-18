@@ -230,3 +230,28 @@ header {
   mask: url('../../vendors/icons/cart-outline.svg') no-repeat center
     center/cover;
 }
+
+/* ------------------------------------ */
+/* Section: Meals */
+/* ------------------------------------ */
+.meals-showcase {
+  list-style-type: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  float: left;
+  display: block;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.meal-photo img {
+  width: 100%;
+  height: 50vh;
+}
