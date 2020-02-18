@@ -1,3 +1,7 @@
+/* ------------------------------------ */
+/* Basic Setup */
+/* ------------------------------------ */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +12,221 @@ html {
   background-color: #fff;
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  margin: 0 0 2rem 0;
+  color: #fff;
+  font-size: 4.8rem;
+  word-spacing: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  word-spacing: 0.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h2:after {
+  content: ' ';
+  width: 10rem;
+  margin: 3rem auto 0 auto;
+  display: block;
+  height: 0.2rem;
+  background: #e67e22;
+}
+
+h3 {
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  font-size: 2rem;
+}
+
+/* Pararaphs */
+
+.long-copy {
+  line-height: 3.5rem;
+  width: 70%;
+  font-size: 2rem;
+  margin-left: 15%;
+  padding-bottom: 2rem;
+}
+
+.box {
+  padding: 1%;
+}
+
+.box p {
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+}
+
+/* ------------------------------------ */
+/* Re-useable components */
+/* ------------------------------------ */
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 8rem 0;
+}
+
+/* Buttons */
+
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 10rem;
+  color: #fff;
+  transition: background 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  border: 0.1rem solid #e67e22;
+  background: #e67e22;
+  margin-right: 1.5rem;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 0.1rem solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+  background: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 0.1rem solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 0.1rem solid #cf6d17;
+  color: #fff;
+}
+
+/* ------------------------------------ */
+/* Header */
+/* ------------------------------------ */
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 0),
+    url('./img/hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 10rem;
+  width: auto;
+  float: left;
+  margin-top: 2rem;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 5.5rem;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 4rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 0.8rem 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 0.2rem solid #e67e22;
+}
+
+/* ------------------------------------ */
+/* Section: Features */
+/* ------------------------------------ */
+
+.section-features {
+  height: 100vh;
+}
+
+.icon-big {
+  height: 7rem;
+  width: 7rem;
+  background-color: #e67e22;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.infinite-icon {
+  -webkit-mask: url('../../vendors/icons/infinite-outline.svg') no-repeat center
+    center/cover;
+  mask: url('../../vendors/icons/infinite-outline.svg') no-repeat center
+    center/cover;
+}
+
+.stopwatch-icon {
+  -webkit-mask: url('../../vendors/icons/stopwatch-outline.svg') no-repeat
+    center center/cover;
+  mask: url('../../vendors/icons/stopwatch-outline.svg') no-repeat center
+    center/cover;
+}
+
+.nutrition-icon {
+  -webkit-mask: url('../../vendors/icons/nutrition-outline.svg') no-repeat
+    center center/cover;
+  mask: url('../../vendors/icons/nutrition-outline.svg') no-repeat center
+    center/cover;
+}
+
+.cart-icon {
+  -webkit-mask: url('../../vendors/icons/cart-outline.svg') no-repeat center
+    center/cover;
+  mask: url('../../vendors/icons/cart-outline.svg') no-repeat center
+    center/cover;
 }
