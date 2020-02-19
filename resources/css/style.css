@@ -130,7 +130,8 @@ section {
 /* Buttons */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type='submit'] {
   font-size: 2rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -142,7 +143,8 @@ section {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type='submit'] {
   border: 0.1rem solid #e67e22;
   background: #e67e22;
   margin-right: 1.5rem;
@@ -155,12 +157,15 @@ section {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type='submit']:hover,
+input[type='submit']:active {
   background: #cf6d17;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type='submit'] {
   border: 0.1rem solid #cf6d17;
 }
 
@@ -524,4 +529,35 @@ cite img {
 .plan-box div:last-child {
   text-align: center;
   border-bottom: none;
+}
+
+/* ------------------------------------ */
+/* Section: contact */
+/* ------------------------------------ */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type='text'],
+input[type='email'],
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid #ccc;
+}
+
+textarea {
+  height: 10rem;
+}
+
+input[type='checkbox'] {
+  margin: 1rem 0.5rem 1rem 0;
+}
+
+*:focus {
+  outline: none;
 }
