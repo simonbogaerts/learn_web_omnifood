@@ -454,3 +454,74 @@ cite img {
   margin-right: 1rem;
   vertical-align: middle;
 }
+
+/* ------------------------------------ */
+/* Section: Testimonials */
+/* ------------------------------------ */
+
+.section-plans {
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.icon-checkmark {
+  -webkit-mask: url('../../vendors/icons/checkmark-outline.svg') no-repeat
+    center center/cover;
+  mask: url('../../vendors/icons/checkmark-outline.svg') no-repeat center
+    center/cover;
+}
+
+.icon-cross {
+  -webkit-mask: url('../../vendors/icons/close-outline.svg') no-repeat center
+    center/cover;
+  mask: url('../../vendors/icons/close-outline.svg') no-repeat center
+    center/cover;
+}
+
+.plan-box {
+  background: #fff;
+  border-radius: 0.5rem;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0.5rem 0.5rem 0.5rem #efefef;
+}
+
+.plan-box div {
+  padding: 1.5rem;
+  border-bottom: #f4f4f4 0.1rem solid;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 0.5rem 0;
+}
+
+.plan-box div:first-child {
+  background: #fcfcfc;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border-bottom: none;
+}
